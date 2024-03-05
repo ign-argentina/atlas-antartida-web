@@ -138,15 +138,16 @@ section,
     margin    : auto;
 }
 
-a {
+.cajas_temas a {
     color          : black;
     font-weight    : bold;
     text-decoration: none;
     text-transform : initial;
 }
 
-a:hover {
+.cajas_temas a:hover {
     color: grey;
+    text-decoration: none;
 }
 
 .disabled {
@@ -260,7 +261,7 @@ a:hover {
 }
 
 .license p {
-    font-size: large;
+    font-size: large !important;
 }
 
 .license a {
