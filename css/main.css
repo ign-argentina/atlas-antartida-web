@@ -319,7 +319,7 @@ footer .footer-social {
 footer div#min-def-logo {
   height: 100%;
   width: 220px;
-  background-image: url(/img/defensamargen-2024.svg);
+  background-image: url(https://anida.ign.gob.ar/img/defensamargen-2024.svg);
   background-size: cover;
   background-repeat: no-repeat;
 }
