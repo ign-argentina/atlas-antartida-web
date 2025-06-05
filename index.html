@@ -16,15 +16,13 @@
 
   <title>Atlas Antártida</title>
 
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta charset="UTF-8">
+  <meta name="description" content="Atlas interactivo de la Antártida Argentina, que ofrece información detallada sobre historia, bases antárticas, geomorfología, oceanografía y otros ejes temáticos relevantes del continente blanco.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
-  <script src="https://anida.ign.gob.ar/js/jquery-3.3.1.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
   <style>
     /* Remove the navbar's default margin-bottom and rounded borders */
@@ -48,88 +46,90 @@
       background-repeat: no-repeat;
     }
   </style>
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 </head>
 
 <body>
-
   <!-- Google Tag Manager (noscript) -->
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WRQ3TJV" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
+  <header>
 
-  <!-- Menú superior -->
-  <a id="inicio"></a>
-  <nav class="navbar navbar-inverse">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a id="inicio-atlas-antartida" class="navbar-brand" href="index.html">
-          <img src="icono_home.png" style="width: 25px; padding-top:0%"></a>
+    <!-- Menú superior -->
+    <a id="inicio"></a>
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a id="inicio-atlas-antartida" class="navbar-brand" href="index.html">
+            <img src="icono_home.png" alt="Inicio Atlas Antártida" style="width: 25px; padding-top:0%"></a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+              <ul class="nav navbar-nav">
+                <li><a id="acerca-del-atlas" href="acercade.html">Acerca del Atlas</a></li>
+                <li><a id="contacto" href="contacto.html">Contacto</a></li>
+                <li><a id="como-citar" href="cita.html">¿Cómo citar?</a></li>
+                <li><a id="anida-link" href="https://anida.ign.gob.ar/">ANIDA</a></li>
+              </ul>
+            </div>
+            </div>
+            </nav>
+  </header>
+  <main>
+    <section class="jumbotron full-height text-center home1">
+      <div id="home">
+        <div id="home-title">
+          <h1>ATLAS DE LA ANTÁRTIDA ARGENTINA</h1>
+        </div>
+        <a rel="secciones" href="#ejes" class="btn btn-primary">Ejes temáticos</a>
+        <div class="license">
+          <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/">
+            <img alt="Licencia de Creative Commons" src="https://i.creativecommons.org/l/by-nc-nd/4.0/80x15.png">
+          </a>
+          <p>Esta obra está bajo una <a rel="license" target="_blank" href="https://creativecommons.org/licenses/by-nc-nd/4.0/">licencia de Creative Commons Reconocimiento-NoComercial-SinObraDerivada 4.0 Internacional</a>.
+          </p>
+        </div>
       </div>
-      <div class="collapse navbar-collapse" id="myNavbar">
-        <ul class="nav navbar-nav">
-          <li><a id="acerca-del-atlas" href="acercade.html">Acerca del Atlas</a></li>
-          <li><a id="contacto" href="contacto.html">Contacto</a></li>
-          <li><a id="como-citar" href="cita.html">¿Cómo citar?</a></li>
-          <li><a id="anida-link" href="https://anida.ign.gob.ar/">ANIDA</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+    </section>
 
-  <div class="jumbotron full-height text-center home1">
-    <div id="home">
-      <div id="home-title">
-        <h1>ATLAS DE LA ANTÁRTIDA ARGENTINA</h1>
-      </div>
-      <a rel="secciones" href="#ejes" class="btn btn-primary">Ejes temáticos</a>
-      <div class="license">
-        <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/">
-          <img alt="Licencia de Creative Commons" src="https://i.creativecommons.org/l/by-nc-nd/4.0/80x15.png">
+    <a id="ejes"></a>
+    <div class="cajas_temas">
+      <div class="caja-btn">
+        <a id="historia-antartica-argentina" target="_blank" href="https://antartida-anida.ign.gob.ar/mapstore/#/geostory/398">
+          <img src="iconos_PIDEFF-02_historia.svg" class="caja-img">
+          <p>Historia antártica argentina</p>
         </a>
-        <p>Esta obra está bajo una <a rel="license" target="_blank" href="https://creativecommons.org/licenses/by-nc-nd/4.0/">licencia de Creative Commons Reconocimiento-NoComercial-SinObraDerivada 4.0 Internacional</a>.
-        </p>
+        <hr>
+      </div>
+      <div class="caja-btn">
+        <a id="bases-antarticas" target="_blank" href="https://antartida-anida.ign.gob.ar/mapstore/#/geostory/4872">
+          <img src="iconos_PIDEFF-03_basesantarticas.svg" class="caja-img">
+          <p>Bases antárticas, transporte y logística</p>
+        </a>
+        <hr>
+      </div>
+      <div class="caja-btn">
+        <a id="geomorfologia" target="_blank" href="https://antartida-anida.ign.gob.ar/mapstore/#/geostory/194">
+          <img src="iconos_PIDEFF-07_geomorfologia.svg" class="caja-img">
+          <p>Geomorfología</p>
+        </a>
+        <hr>
+      </div>
+      <div class="caja-btn">
+        <a id="oceanografia" target="_blank" href="https://antartida-anida.ign.gob.ar/mapstore/#/geostory/410">
+          <img src="iconos_PIDEFF-10_oceanografia.svg" class="caja-img">
+          <p>Oceanografía</p>
+        </a>
+        <hr>
       </div>
     </div>
-  </div>
 
-  <a id="ejes"></a>
-  <div class="cajas_temas">
-    <div class="caja-btn">
-      <a id="historia-antartica-argentina" target="_blank" href="https://antartida-anida.ign.gob.ar/mapstore/#/geostory/398">
-        <img src="iconos_PIDEFF-02_historia.svg" class="caja-img">
-        <p>Historia antártica argentina</p>
-      </a>
-      <hr>
-    </div>
-    <div class="caja-btn">
-      <a id="bases-antarticas" target="_blank" href="https://antartida-anida.ign.gob.ar/mapstore/#/geostory/4872">
-        <img src="iconos_PIDEFF-03_basesantarticas.svg" class="caja-img">
-        <p>Bases antárticas, transporte y logística</p>
-      </a>
-      <hr>
-    </div>
-    <div class="caja-btn">
-      <a id="geomorfologia" target="_blank" href="https://antartida-anida.ign.gob.ar/mapstore/#/geostory/194">
-        <img src="iconos_PIDEFF-07_geomorfologia.svg" class="caja-img">
-        <p>Geomorfología</p>
-      </a>
-      <hr>
-    </div>
-    <div class="caja-btn">
-      <a id="oceanografia" target="_blank" href="https://antartida-anida.ign.gob.ar/mapstore/#/geostory/410">
-        <img src="iconos_PIDEFF-10_oceanografia.svg" class="caja-img">
-        <p>Oceanografía</p>
-      </a>
-      <hr>
-    </div>
-
-  </div>
-
+  </main>
   <footer class="container-fluid text-center full-width">
     <div class="footer-secction">
       <a target="_blank" href="https://www.argentina.gob.ar/defensa">
@@ -138,15 +138,15 @@
     </div>
     <div class="footer-social">
       <a target="_blank" href="https://www.facebook.com/institutogeograficonacional">
-        <img src="http://anida.ign.gob.ar/img/redes-blanco-01.svg"></a>
+        <img src="http://anida.ign.gob.ar/assets/icons/redes-blanco-01.svg" alt="Facebook IGN"></a>
       <a target="_blank" href="https://twitter.com/ARGENTINAIGN">
-        <img src="http://anida.ign.gob.ar/img/redes-blanco-02.svg"></a>
+        <img src="http://anida.ign.gob.ar/assets/icons/redes-blanco-02.svg" alt="Twitter IGN"></a>
       <a target="_blank" href="https://www.instagram.com/argentinaignoficial/">
-        <img src="http://anida.ign.gob.ar/img/redes-blanco-03.svg"></a>
+        <img src="http://anida.ign.gob.ar/assets/icons/redes-blanco-03.svg" alt="Instagram IGN"></a>
       <a target="_blank" href="https://www.youtube.com/user/IgnArgentina">
-        <img src="http://anida.ign.gob.ar/img/redes-blanco-04.svg"></a>
+        <img src="http://anida.ign.gob.ar/assets/icons/redes-blanco-04.svg" alt="Youtube IGN"></a>
       <a target="_blank" href="http://www.ign.gob.ar/">
-        <img id="ign-logo" src="http://anida.ign.gob.ar/img/ign-logo-footer.svg"></a>
+        <img id="ign-logo" src="http://anida.ign.gob.ar/assets/icons/logo_IGN_blanco_sinTexto.svg" alt="Logo IGN"></a>
     </div>
   </footer>
 
