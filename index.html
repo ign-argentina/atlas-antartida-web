@@ -19,136 +19,128 @@
   <meta charset="UTF-8">
   <meta name="description" content="Atlas interactivo de la Antártida Argentina, que ofrece información detallada sobre historia, bases antárticas, geomorfología, oceanografía y otros ejes temáticos relevantes del continente blanco.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Instituto Geográfico Nacional">
+  <meta name="keywords" content="atlas, geografía, Argentina, mapas interactivos, estudios geográficos, datos ambientales, territorio argentino, procesos geográficos, cartografía temática, información georreferenciada, textos explicativos, contenidos gráficos, multimedia, visualización de datos, consulta de información, interpretación de datos, análisis geográfico, educación geográfica, recursos educativos, investigación geográfica, antártica, Antártida, historia antártica, bases antárticas, geomorfología, oceanografía, transporte y logística, medio ambiente, ecosistemas antárticos, fauna y flora antártica, cambio climático, conservación ambiental, investigación científica, geología antártica, clima antártico">
 
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+  <!-- Meta etiquetas para SEO -->
+  <meta name="robots" content="index, follow">
+  <meta name="googlebot" content="index, follow">
+  <meta name="language" content="Spanish">
 
-  <style>
-    /* Remove the navbar's default margin-bottom and rounded borders */
-    .navbar {
-      margin-bottom: 0;
-      border-radius: 3px;
-    }
+  <!-- Favicon -->
+  <link rel="icon" href="/assets/icons/favicon.png" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/assets/icons/favicon.png">
 
-    /* Add a gray background color and some padding to the footer */
-    footer {
-      background-color: #5599DB;
-      padding: 25px;
-    }
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <!-- Boxicons -->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
 
-    .home1 {
-      background-image: url('portada_2.jpg');
-      height: 90vh;
-      display: flex;
-      text-align: center;
-      background-size: cover;
-      background-repeat: no-repeat;
-    }
-  </style>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <!-- Estilos personalizados -->
+  <link rel="stylesheet" href="/styles/normalize.css">
+  <link rel="stylesheet" href="/styles/main.css">
+  <link rel="stylesheet" href="/styles/navbar.css">
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </head>
 
 <body>
+
   <!-- Google Tag Manager (noscript) -->
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WRQ3TJV" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
-  <header>
 
-    <!-- Menú superior -->
-    <a id="inicio"></a>
-    <nav class="navbar navbar-inverse">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a id="inicio-atlas-antartida" class="navbar-brand" href="index.html">
-            <img src="icono_home.png" alt="Inicio Atlas Antártida" style="width: 25px; padding-top:0%"></a>
-            </div>
-            <div class="collapse navbar-collapse" id="myNavbar">
-              <ul class="nav navbar-nav">
-                <li><a id="acerca-del-atlas" href="acercade.html">Acerca del Atlas</a></li>
-                <li><a id="contacto" href="contacto.html">Contacto</a></li>
-                <li><a id="como-citar" href="cita.html">¿Cómo citar?</a></li>
-                <li><a id="anida-link" href="https://anida.ign.gob.ar/">ANIDA</a></li>
-              </ul>
-            </div>
-            </div>
-            </nav>
-  </header>
-  <main>
-    <section class="jumbotron full-height text-center home1">
-      <div id="home">
-        <div id="home-title">
-          <h1>ATLAS DE LA ANTÁRTIDA ARGENTINA</h1>
-        </div>
-        <a rel="secciones" href="#ejes" class="btn btn-primary">Ejes temáticos</a>
-        <div class="license">
-          <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/">
-            <img alt="Licencia de Creative Commons" src="https://i.creativecommons.org/l/by-nc-nd/4.0/80x15.png">
-          </a>
-          <p>Esta obra está bajo una <a rel="license" target="_blank" href="https://creativecommons.org/licenses/by-nc-nd/4.0/">licencia de Creative Commons Reconocimiento-NoComercial-SinObraDerivada 4.0 Internacional</a>.
-          </p>
-        </div>
+  <header id="header" role="navigation"></header>
+
+  <script>
+    fetch('/components/navbar.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('header').innerHTML = data;
+      });
+  </script>
+
+  <main role="main">
+    <section id="hero" class="d-flex align-items-center">
+      <div class="container position-relative" data-aos="fade-up" data-aos-delay="500">
+        <h1 style="font-family: Gotham-Light;">ATLAS DE LA ANTÁRTIDA ARGENTINA</h1>
+        <br>
+        <a rel="secciones" href="#ejes" class="scrollto" title="Estructura temática"><i class="bx bx-chevron-down"></i></a>
       </div>
     </section>
 
-    <a id="ejes"></a>
-    <div class="cajas_temas">
-      <div class="caja-btn">
-        <a id="historia-antartica-argentina" target="_blank" href="https://antartida-anida.ign.gob.ar/mapstore/#/geostory/398">
-          <img src="iconos_PIDEFF-02_historia.svg" class="caja-img">
-          <p>Historia antártica argentina</p>
-        </a>
-        <hr>
+    <section id="ejes" class="services">
+      <div class="container">
+        <div class="flex-container">
+          <!-- Ítem 1 -->
+          <div class="flex-item no-bg">
+            <a href="https://antartida-anida.ign.gob.ar/mapstore/#/geostory/398" id="historia-antartica-argentina" target="_blank" data-tracking-category="navigation" data-tracking-action="click" data-tracking-label="Historia antártica argentina" title="Historia antártica argentina">
+              <div class="icon-box no-bg">
+                <div class="icon">
+                  <img src="/assets/images/iconos_PIDEFF-02_historia.svg" alt="Historia antártica argentina">
+                </div>
+                <h5>Historia antártica argentina</h5>
+              </div>
+            </a>
+          </div>
+          <!-- Ítem 2 -->
+          <div class="flex-item no-bg">
+            <a href="https://antartida-anida.ign.gob.ar/mapstore/#/geostory/4872" id="bases-antarticas" target="_blank" data-tracking-category="navigation" data-tracking-action="click" data-tracking-label="Bases antárticas, transporte y logística" title="Bases antárticas, transporte y logística">
+              <div class="icon-box no-bg">
+                <div class="icon">
+                  <img src="/assets/images/iconos_PIDEFF-03_basesantarticas.svg" alt="Bases antárticas, transporte y logística">
+                </div>
+                <h5>Bases antárticas, transporte y logística</h5>
+              </div>
+            </a>
+          </div>
+          <!-- Ítem 3 -->
+          <div class="flex-item no-bg">
+            <a href="https://antartida-anida.ign.gob.ar/mapstore/#/geostory/194" id="geomorfologia" target="_blank" data-tracking-category="navigation" data-tracking-action="click" data-tracking-label="Geomorfología" title="Geomorfología">
+              <div class="icon-box no-bg">
+                <div class="icon">
+                  <img src="/assets/images/iconos_PIDEFF-07_geomorfologia.svg" alt="Geomorfología">
+                </div>
+                <h5>Geomorfología</h5>
+              </div>
+            </a>
+          </div>
+          <!-- Ítem 4 -->
+          <div class="flex-item no-bg">
+            <a id="oceanografia" target="_blank" href="https://antartida-anida.ign.gob.ar/mapstore/#/geostory/410">
+              <div class="icon-box no-bg">
+                <div class="icon">
+                  <img src="/assets/images/iconos_PIDEFF-10_oceanografia.svg" alt="Oceanografía">
+                </div>
+                <h5>Oceanografía</h5>
+              </div>
+            </a>
+          </div>
+        </div>
       </div>
-      <div class="caja-btn">
-        <a id="bases-antarticas" target="_blank" href="https://antartida-anida.ign.gob.ar/mapstore/#/geostory/4872">
-          <img src="iconos_PIDEFF-03_basesantarticas.svg" class="caja-img">
-          <p>Bases antárticas, transporte y logística</p>
-        </a>
-        <hr>
-      </div>
-      <div class="caja-btn">
-        <a id="geomorfologia" target="_blank" href="https://antartida-anida.ign.gob.ar/mapstore/#/geostory/194">
-          <img src="iconos_PIDEFF-07_geomorfologia.svg" class="caja-img">
-          <p>Geomorfología</p>
-        </a>
-        <hr>
-      </div>
-      <div class="caja-btn">
-        <a id="oceanografia" target="_blank" href="https://antartida-anida.ign.gob.ar/mapstore/#/geostory/410">
-          <img src="iconos_PIDEFF-10_oceanografia.svg" class="caja-img">
-          <p>Oceanografía</p>
-        </a>
-        <hr>
-      </div>
-    </div>
-
+    </section>
   </main>
-  <footer class="container-fluid text-center full-width">
-    <div class="footer-secction">
-      <a target="_blank" href="https://www.argentina.gob.ar/defensa">
-        <div id="min-def-logo"></div>
-      </a>
-    </div>
-    <div class="footer-social">
-      <a target="_blank" href="https://www.facebook.com/institutogeograficonacional">
-        <img src="http://anida.ign.gob.ar/assets/icons/redes-blanco-01.svg" alt="Facebook IGN"></a>
-      <a target="_blank" href="https://twitter.com/ARGENTINAIGN">
-        <img src="http://anida.ign.gob.ar/assets/icons/redes-blanco-02.svg" alt="Twitter IGN"></a>
-      <a target="_blank" href="https://www.instagram.com/argentinaignoficial/">
-        <img src="http://anida.ign.gob.ar/assets/icons/redes-blanco-03.svg" alt="Instagram IGN"></a>
-      <a target="_blank" href="https://www.youtube.com/user/IgnArgentina">
-        <img src="http://anida.ign.gob.ar/assets/icons/redes-blanco-04.svg" alt="Youtube IGN"></a>
-      <a target="_blank" href="http://www.ign.gob.ar/">
-        <img id="ign-logo" src="http://anida.ign.gob.ar/assets/icons/logo_IGN_blanco_sinTexto.svg" alt="Logo IGN"></a>
-    </div>
-  </footer>
+
+  <footer id="footer" role="contentinfo"></footer>
+
+  <script>
+    fetch('/components/footer.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('footer').innerHTML = data;
+      });
+  </script>
+  <script src="/js/main.js"></script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Atlas Antártida Argentina",
+  "description": "Atlas interactivo de la Antártida Argentina.",
+  "url": "https://antartida-anida.ign.gob.ar/"
+}
+</script>
 
 </body>
 

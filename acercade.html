@@ -14,35 +14,36 @@
     })(window, document, 'script', 'dataLayer', 'GTM-WRQ3TJV');</script>
   <!-- End Google Tag Manager -->
 
-  <title>Acerca del Atlas de la Antártida Argentina</title>
+  <title>Atlas Antártida</title>
 
   <meta charset="UTF-8">
   <meta name="description" content="Atlas interactivo de la Antártida Argentina, que ofrece información detallada sobre historia, bases antárticas, geomorfología, oceanografía y otros ejes temáticos relevantes del continente blanco.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Instituto Geográfico Nacional">
+  <meta name="keywords" content="atlas, geografía, Argentina, mapas interactivos, estudios geográficos, datos ambientales, territorio argentino, procesos geográficos, cartografía temática, información georreferenciada, textos explicativos, contenidos gráficos, multimedia, visualización de datos, consulta de información, interpretación de datos, análisis geográfico, educación geográfica, recursos educativos, investigación geográfica, antártica, Antártida, historia antártica, bases antárticas, geomorfología, oceanografía, transporte y logística, medio ambiente, ecosistemas antárticos, fauna y flora antártica, cambio climático, conservación ambiental, investigación científica, geología antártica, clima antártico">
 
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+  <!-- Meta etiquetas para SEO -->
+  <meta name="robots" content="index, follow">
+  <meta name="googlebot" content="index, follow">
+  <meta name="language" content="Spanish">
 
-  <style>
-    /* Remove the navbar's default margin-bottom and rounded borders */
-    .navbar {
-      margin-bottom: 0;
-      border-radius: 3px;
-    }
+  <!-- Favicon -->
+  <link rel="icon" href="/assets/icons/favicon.png" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/assets/icons/favicon.png">
 
-    /* Add a gray background color and some padding to the footer */
-    footer {
-      background-color: #5599DB;
-      padding: 25px;
-    }
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <!-- Boxicons -->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
 
-    .home1 {
-      background-color: #e1ffff;
-    }
-  </style>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <!-- Estilos personalizados -->
+  <link rel="stylesheet" href="/styles/normalize.css">
+  <link rel="stylesheet" href="/styles/main.css">
+  <link rel="stylesheet" href="/styles/navbar.css">
+  <link rel="stylesheet" href="/styles/acercade.css">
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -51,103 +52,89 @@
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WRQ3TJV" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
 
-  <nav class="navbar navbar-inverse">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a id="inicio-atlas-antartida" class="navbar-brand" href="index.html">
-          <img src="icono_home.png" style="width: 25px; padding-top:0%"></a>
-      </div>
-      <div class="collapse navbar-collapse" id="myNavbar">
-        <ul class="nav navbar-nav">
-          <li><a id="acerca-del-atlas" href="acercade.html">Acerca del Atlas</a></li>
-          <li><a id="contacto" href="contacto.html">Contacto</a></li>
-          <li><a id="como-citar" href="cita.html">¿Cómo citar?</a></li>
-          <li><a id="anida-link" href="https://anida.ign.gob.ar/">ANIDA</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+  <header id="header" role="navigation"></header>
 
-  <div id="menusup_titlezone" class="jumbotron">
-    <h2>Acerca del<br> Atlas de la Antártida Argentina<h2>
-  </div>
-  <div class="row" style="width: 100%; background-color:#fafafa; padding:0px 20px 150px 20px;">
-    <div id="menusup_copete" class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-      <p>El IGN presentó un proyecto de I+D al Programa de Investigación y Desarrollo para la Defensa
-        <a href="https://www.google.com/url?q=https://www.argentina.gob.ar/sites/default/files/anexo_1_-_bases_de_convocatoria_piddef_2020_v2.pdf&sa=D&source=docs&ust=1659018726867669&usg=AOvVaw0F2WIQAVpZLhDIWcvdEDQ2" style="color:#5599DB;"> (Bases Convocatoria PIDDEF 2020) </a>
-        de la Secretaría de Investigación, Política Industrial y Producción para la Defensa bajo la esfera del Ministerio de Defensa, que se propuso sentar las bases para la elaboración del primer atlas digital de la Antártida Argentina mediante el desarrollo de un prototipo.
-        <br>
-      </p>
+  <script>
+    fetch('/components/navbar.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('header').innerHTML = data;
+      });
+  </script>
+
+  <main>
+    <!-- Sección principal -->
+    <div id="menusup_titlezone" class="jumbotron text-center">
+      <h2>Acerca del Atlas de la Antártida Argentina<h2>
     </div>
 
-    <div id="menusup_content" class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
-
-      <h4>Proyecto PIDDEF 17-2020 “Desarrollo del primer atlas digital de la Antártida Argentina en el marco de la consolidación del ANIDA”</h4>
-
-      <p>El proyecto se llevó adelante junto a investigadores del Instituto Antártico Argentino (IAA) desde marzo de 2021 hasta agosto de 2022.<br> </p>
-      <div style="display: flex; justify-content: space-evenly;">
-        <div class="contenidoequipoIGN" style="display: flex; flex-direction: column; text-align: center; padding-top:0px; justify-content: center; position: relative;">
-          <h4>IGN </h4>
-          <p> Directora: Prof. Analía Almirón </p>
-          <p> Dra. Ana Paula Micou </p>
-          <p> Lic. Paula Villa </p>
-          <p> Lic. Florencia Biscay </p>
-          <p> DG. Eugenia Arnodo </p>
-          <p> Lic. Abril Schofrin </p>
-          <p> Becaria: Lic. Lucía Contardo </p>
+    <section class="content-section">
+      <div class="container">
+        <!-- Introducción -->
+        <div class="section-intro">
+          <p>El IGN presentó un proyecto de I+D al Programa de Investigación y Desarrollo para la Defensa
+            <a href="https://www.google.com/url?q=https://www.argentina.gob.ar/sites/default/files/anexo_1_-_bases_de_convocatoria_piddef_2020_v2.pdf&sa=D&source=docs&ust=1659018726867669&usg=AOvVaw0F2WIQAVpZLhDIWcvdEDQ2" style="color:#5599DB;"> (Bases Convocatoria PIDDEF 2020) </a>
+            de la Secretaría de Investigación, Política Industrial y Producción para la Defensa bajo la esfera del Ministerio de Defensa, que se propuso sentar las bases para la elaboración del primer atlas digital de la Antártida Argentina mediante el desarrollo de un prototipo.
+          </p>
         </div>
 
-        <div class="contenidoequipoIAA" style="display: flex; flex-direction: column; text-align: center; padding-top:0px; justify-content: center; position: relative;">
-          <h4>IAA </h4>
-          <p> Co-Director: Dr. Juan Manuel Lirio </p>
-          <p> Dr. Pablo Gabriel Fontana </p>
-          <p> Dr. Sergio Santillana </p>
-          <p> Dra. Andrea Concheyro </p>
+        <!-- Cuerpo principal -->
+        <div class="section-body">
+
+          <h4>Proyecto PIDDEF 17-2020 “Desarrollo del primer atlas digital de la Antártida Argentina en el marco de la consolidación del ANIDA”</h4>
+
+          <p>El proyecto se llevó adelante junto a investigadores del Instituto Antártico Argentino (IAA) desde marzo de 2021 hasta agosto de 2022.</p><br>
+          <div style="display: flex; justify-content: space-evenly;">
+            <div class="contenidoequipoIGN" style="display: flex; flex-direction: column; text-align: center; padding-top:0px; justify-content: center; position: relative;">
+              <h4>IGN </h4>
+              <p> Directora: Prof. Analía Almirón </p>
+              <p> Dra. Ana Paula Micou </p>
+              <p> Lic. Paula Villa </p>
+              <p> Lic. Florencia Biscay </p>
+              <p> DG. Eugenia Arnodo </p>
+              <p> Lic. Abril Schofrin </p>
+              <p> Becaria: Lic. Lucía Contardo </p>
+            </div>
+
+            <div class="contenidoequipoIAA" style="display: flex; flex-direction: column; text-align: center; padding-top:0px; justify-content: center; position: relative;">
+              <h4>IAA </h4>
+              <p> Co-Director: Dr. Juan Manuel Lirio </p>
+              <p> Dr. Pablo Gabriel Fontana </p>
+              <p> Dr. Sergio Santillana </p>
+              <p> Dra. Andrea Concheyro </p>
+            </div>
+          </div>
+          <br>
+          <p> Entre los principales resultados alcanzados por el proyecto se cuentan: el desarrollo y la descripción de la estructura general del atlas y de los objetos de estudio seleccionados para el desarrollo del prototipo; la producción y la publicación de una colección de contenidos multimedia y datos geográficos sobre los ejes temáticos seleccionados; y la configuración y puesta en funcionamiento de una plataforma Web SIG de código abierto. </p>
+          <br>
+          <p><strong> El Atlas de la Antártida Argentina </strong> contempla 16 ejes temáticos, los que en su conjunto permiten abarcar cuatro grandes áreas de interés del conocimiento del territorio antártico: Ciencias de la tierra; Ciencias sociales y humanas; Ciencias de la vida y Ciencias ambientales. El prototipo desarrollado presenta las publicaciones elaboradas correspondientes a los siguientes ejes temáticos:
+            <a href="https://antartida-anida.ign.gob.ar/mapstore/#/geostory/398/section/4a3ae120-1197-11ed-bd0e-252694f95923">
+              Historia antártica argentina,</a>
+            <a href="https://antartida-anida.ign.gob.ar/mapstore/#/geostory/194/section/177cb7f0-0db3-11ed-8791-c1d8bd4d7665">
+              Geomorfología</a>
+            <a href="https://antartida-anida.ign.gob.ar/mapstore/#/geostory/410/section/fd8936d0-1199-11ed-bd0e-252694f95923">
+              y Oceanografía.</a>
+          </p>
+          <br>
+          <p> De igual forma que <a href="https://anida.ign.gob.ar/index.html"> ANIDA</a>, el Atlas de la Antártida Argentina se propone alcanzar una publicación interactiva que aborde el territorio desde distintos campos de trabajo científico y con el tratamiento de diversas temáticas. Reúne un amplio abanico de contenidos y recursos elaborados especialmente para dicha publicación, a partir de una recapitulación de conocimientos e información realizada conjuntamente con especialistas argentinos asociada a información geoespacial y cartografía temática generada por el IGN.
+          </p>
+          <br>
+          <img src="/assets/images/iconos_juntos.png" style="width: 100%;" />
         </div>
       </div>
-      <br>
-      <p> Entre los principales resultados alcanzados por el proyecto se cuentan: el desarrollo y la descripción de la estructura general del atlas y de los objetos de estudio seleccionados para el desarrollo del prototipo; la producción y la publicación de una colección de contenidos multimedia y datos geográficos sobre los ejes temáticos seleccionados; y la configuración y puesta en funcionamiento de una plataforma Web SIG de código abierto. </p>
-      <br>
-      <p><strong> El Atlas de la Antártida Argentina </strong> contempla 16 ejes temáticos, los que en su conjunto permiten abarcar cuatro grandes áreas de interés del conocimiento del territorio antártico: Ciencias de la tierra; Ciencias sociales y humanas; Ciencias de la vida y Ciencias ambientales. El prototipo desarrollado presenta las publicaciones elaboradas correspondientes a los siguientes ejes temáticos:
-        <a href="https://antartida-anida.ign.gob.ar/mapstore/#/geostory/398/section/4a3ae120-1197-11ed-bd0e-252694f95923">
-          Historia antártica argentina,</a>
-        <a href="https://antartida-anida.ign.gob.ar/mapstore/#/geostory/194/section/177cb7f0-0db3-11ed-8791-c1d8bd4d7665">
-          Geomorfología</a>
-        <a href="https://antartida-anida.ign.gob.ar/mapstore/#/geostory/410/section/fd8936d0-1199-11ed-bd0e-252694f95923">
-          y Oceanografía.</a>
-      </p>
-      <br>
-      <p> De igual forma que <a href="https://anida.ign.gob.ar/index.html"> ANIDA</a>, el Atlas de la Antártida Argentina se propone alcanzar una publicación interactiva que aborde el territorio desde distintos campos de trabajo científico y con el tratamiento de diversas temáticas. Reúne un amplio abanico de contenidos y recursos elaborados especialmente para dicha publicación, a partir de una recapitulación de conocimientos e información realizada conjuntamente con especialistas argentinos asociada a información geoespacial y cartografía temática generada por el IGN.
-      </p>
-      <br>
-      <img src="iconos_juntos.png" style="width: 100%;" />
-    </div>
-  </div>
+    </section>
+  </main>
 
-  <footer class="container-fluid text-center full-width">
-    <div class="footer-secction">
-      <a target="_blank" href="https://www.argentina.gob.ar/defensa">
-        <div id="min-def-logo"></div>
-      </a>
-    </div>
-    <div class="footer-social">
-      <a target="_blank" href="https://www.facebook.com/institutogeograficonacional">
-        <img src="http://anida.ign.gob.ar/assets/icons/redes-blanco-01.svg" alt="Facebook IGN"></a>
-      <a target="_blank" href="https://twitter.com/ARGENTINAIGN">
-        <img src="http://anida.ign.gob.ar/assets/icons/redes-blanco-02.svg" alt="Twitter IGN"></a>
-      <a target="_blank" href="https://www.instagram.com/argentinaignoficial/">
-        <img src="http://anida.ign.gob.ar/assets/icons/redes-blanco-03.svg" alt="Instagram IGN"></a>
-      <a target="_blank" href="https://www.youtube.com/user/IgnArgentina">
-        <img src="http://anida.ign.gob.ar/assets/icons/redes-blanco-04.svg" alt="Youtube IGN"></a>
-      <a target="_blank" href="http://www.ign.gob.ar/">
-        <img id="ign-logo" src="http://anida.ign.gob.ar/assets/icons/logo_IGN_blanco_sinTexto.svg" alt="Logo IGN"></a>
-    </div>
-  </footer>
+  <footer id="footer" role="contentinfo"></footer>
+
+  <script>
+    fetch('/components/footer.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('footer').innerHTML = data;
+      });
+  </script>
+  <script src="/js/main.js"></script>
 
 </body>
 

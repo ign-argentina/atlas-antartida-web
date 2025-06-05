@@ -1,0 +1,57 @@
+<head>
+  <link rel="stylesheet" href="/styles/navbar.css">
+</head>
+<nav class="topnav" id="myTopnav">
+
+  <!-- Logo de ANIDA -->
+  <a href="/index.html" class="logo">
+    <img src="/assets/images/icono_home.svg" alt="Inicio">
+  </a>
+
+  <!-- Menú multinivel: Estructura temática -->
+  <div class="dropdown">
+    <div class="dropbtn" onclick="toggleDropdown(this)">
+      <a class="dropbtn-a" href="javascript:void(0);" style="cursor: default;">Estructura temática</a>
+      <i class='bx bxs-chevron-down' onclick="toggleDropdown(this.parentElement); event.stopPropagation();"></i>
+    </div>
+    <div class="dropdown-content">
+      <div class="dropdown-submenu">
+
+        <a href="https://antartida-anida.ign.gob.ar/mapstore/#/geostory/398" id="historia-antartica-argentina" target="_blank" data-tracking-category="navigation" data-tracking-action="click" data-tracking-label="Historia antártica argentina" title="Historia antártica argentina">Historia antártica argentina</a>
+
+        <a href="https://antartida-anida.ign.gob.ar/mapstore/#/geostory/4872" id="bases-antarticas" target="_blank" data-tracking-category="navigation" data-tracking-action="click" data-tracking-label="Bases antárticas, transporte y logística" title="Bases antárticas, transporte y logística">Bases antárticas, transporte y logística</a>
+
+        <a href="https://antartida-anida.ign.gob.ar/mapstore/#/geostory/194" id="geomorfologia" target="_blank" data-tracking-category="navigation" data-tracking-action="click" data-tracking-label="Geomorfología" title="Geomorfología">Geomorfología</a>
+
+        <a id="oceanografia" target="_blank" href="https://antartida-anida.ign.gob.ar/mapstore/#/geostory/410" data-tracking-category="navigation" data-tracking-action="click" data-tracking-label="Oceanografía" title="Oceanografía">Oceanografía</a>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- <a href="/temas.html">Mapas temáticos</a> --> <!-- Fase 2 -->
+
+  <!-- Menú multinivel: Acerca de ANIDA -->
+  <div class="dropdown">
+    <div class="dropbtn" onclick="toggleDropdown(this)">
+      <a class="dropbtn-a" href="javascript:void(0);" style="cursor: default;">Acerca de ANIDA</a>
+      <i class='bx bxs-chevron-down' onclick="toggleDropdown(this.parentElement); event.stopPropagation();"></i>
+    </div>
+    <div class="dropdown-content">
+      <div class="dropdown-submenu">
+
+        <a href="/acercade.html">Acerca de</a>
+        <a href="/cita.html">¿Cómo citar?</a>
+
+      </div>
+    </div>
+  </div>
+
+  <a href="/contacto.html">Contacto</a>
+
+  <a href="https://anida.ign.gob.ar" style="font-weight: 600;">ANIDA</a>
+
+  <!-- Boton menu en celulares -->
+  <a href="javascript:void(0);" class="icon" onclick="toggleResponsiveNavbar()">&#9776;</a>
+
+</nav>
