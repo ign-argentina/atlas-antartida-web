@@ -75,7 +75,7 @@ a:hover {
 #hero {
   width: 100%;
   /* height: calc(100vh - 110px); */
-  background-image: url('../assets/images/portada_2.jpg');
+  background-image: url('../assets/images/Atlasantartida_fondo_horizontal_1900_1080.jpg');
   height: 90vh;
   background-size: cover;
   background-repeat: no-repeat;
@@ -83,6 +83,7 @@ a:hover {
   position: relative;
 }
 #hero .container {
+  top: -190px;
   text-align: center;
   width: 100%;
 }
@@ -90,14 +91,14 @@ a:hover {
   font-size: 6rem;
   color: #FFF;
 }
-#hero > div > picture > img {
+#hero>div>picture>img {
   width: -webkit-fill-available;
   max-width: 950px;
 }
 .scrollto {
   position: relative;
-  top: 200px;
-}	
+  top: 450px;
+}
 @media (max-width: 500px) {
   #hero {
     background-image: none;
@@ -113,15 +114,15 @@ a:hover {
     font-size: 4rem;
   }
   .scrollto {
-  position: relative;
-  top: 100px;
-}	
+    position: relative;
+    top: 100px;
+  }
 }
 #hero h1 {
   margin: 0 0 10px 0;
-  font-size: 48px;
-  font-weight: 700;
-  line-height: 56px;
+  font-size: 58px;
+  font-weight: 500;
+  line-height: 58px;
   text-transform: uppercase;
   color: #fff;
 }
@@ -169,6 +170,10 @@ a:hover {
   #hero h1 {
     font-size: 28px;
     line-height: 36px;
+    color: black;
+    padding: 0 0 233px 0;
+    position: relative;
+    top: 200px;
   }
   #hero h2 {
     font-size: 18px;
@@ -182,7 +187,7 @@ section {
 }
 section#ejes {
   padding: 3rem 0;
-}	
+}
 .container {
   max-width: 1200px;
   margin: 0 auto;
