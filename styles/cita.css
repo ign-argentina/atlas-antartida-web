@@ -1,0 +1,10 @@
+.cita h3 {
+  margin-bottom: 2rem;
+}
+.cita h5 {
+  color: #157DB9;
+  margin-bottom: 0.5rem;
+}
+.cita a {
+  overflow-wrap: break-word;
+}

@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-WRQ3TJV');</script>
+  <!-- End Google Tag Manager -->
+
+  <title>Atlas Antártida</title>
+
+  <meta charset="UTF-8">
+  <meta name="description" content="Atlas interactivo de la Antártida Argentina, que ofrece información detallada sobre historia, bases antárticas, geomorfología, oceanografía y otros ejes temáticos relevantes del continente blanco.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Instituto Geográfico Nacional">
+  <meta name="keywords" content="atlas, geografía, Argentina, mapas interactivos, estudios geográficos, datos ambientales, territorio argentino, procesos geográficos, cartografía temática, información georreferenciada, textos explicativos, contenidos gráficos, multimedia, visualización de datos, consulta de información, interpretación de datos, análisis geográfico, educación geográfica, recursos educativos, investigación geográfica, antártica, Antártida, historia antártica, bases antárticas, geomorfología, oceanografía, transporte y logística, medio ambiente, ecosistemas antárticos, fauna y flora antártica, cambio climático, conservación ambiental, investigación científica, geología antártica, clima antártico">
+
+  <!-- Meta etiquetas para SEO -->
+  <meta name="robots" content="index, follow">
+  <meta name="googlebot" content="index, follow">
+  <meta name="language" content="Spanish">
+
+  <!-- Favicon -->
+  <link rel="icon" href="/assets/icons/favicon.png" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/assets/icons/favicon.png">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <!-- Boxicons -->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
+  <!-- Estilos personalizados -->
+  <link rel="stylesheet" href="/styles/normalize.css">
+  <link rel="stylesheet" href="/styles/main.css">
+  <link rel="stylesheet" href="/styles/navbar.css">
+  <link rel="stylesheet" href="/styles/equipo.css">
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WRQ3TJV" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <header id="header"></header>
+
+  <script>
+    fetch('/components/navbar.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('header').innerHTML = data;
+      });
+  </script>
+  <main>
+    <div id="menusup_titlezone" class="jumbotron text-center">
+      <h2>Equipo de trabajo</h2>
+    </div>
+
+    <section class="content-section">
+      <div class="container">
+        <!-- Autoridades y equipo principal -->
+        <div class="section-authorities">
+          <h3>Autoridades</h3>
+          <div class="authority-item">
+            <h5>Presidente del instituto Geográfico Nacional</h5>
+            <p>CR (R) Ingeniero Geógrafo Jorge Horacio Machuca</p>
+          </div>
+
+          <div class="authority-item">
+            <h5>Dirección Nacional de Servicios Geográficos</h5>
+            <p>Ing. Agrim. Agustín Chizzini Melo</p>
+          </div>
+
+          <div class="authority-item">
+            <h5>Geografía</h5>
+            <p>Lic. María Dolores Puente</p>
+          </div>
+
+          <!-- Equipo de trabajo -->
+          <div class="section-team">
+            <h3>Equipo de trabajo</h3>
+
+            <div class="team-area">
+              <h5>Coordinación</h5>
+              <ul>
+                <li>Analía Almirón</li>
+              </ul>
+            </div>
+
+            <div class="team-area">
+              <h5>Edición</h5>
+              <ul>
+                <li>Analía Almirón</li>
+                <li>Paula Villa</li>
+                <li>Eugenia Arnodo</li>
+              </ul>
+            </div>
+
+            <div class="team-area">
+              <h5>Base de datos y cartografía</h5>
+              <ul>
+                <li>Florencia Biscay</li>
+              </ul>
+            </div>
+
+            <div class="team-area">
+              <h5>Diseño gráfico</h5>
+              <ul>
+                <li>Eugenia Arnodo</li>
+              </ul>
+            </div>
+
+            <!-- <div class="team-area">
+          <h5>Desarrollo sitio web</h5>
+          <ul>
+            <li>Gonzalo Pérez</li>
+            <li>Jorge Alba Posse</li>
+            <li>Gustavo Silvestre Coutinho</li>
+          </ul>
+        </div> -->
+
+          </div>
+
+          <!-- Colaboradores -->
+          <div class="section-collaborators">
+            <h3>Colaboradores</h3>
+
+            <article class="collaborator-area data-source">
+              <h5>Historia antártica argentina</h5>
+              <ul>
+                <li>Pablo Gabriel Fontana. IAA/CONICET.</li>
+              </ul>
+            </article>
+
+            <article class="collaborator-area data-source">
+              <h5>Bases antárticas, transporte y logística</h5>
+              <ul>
+                <li>COCOANTAR</li>
+                <li>SGM, IGN.</li>
+              </ul>
+            </article>
+
+            <article class="collaborator-area data-source">
+              <h5>Geomorfología</h5>
+              <ul>
+                <li>Juan Manuel Lirio. IAA/UNSAM.</li>
+                <li>Andrea Concheyro. IAA/CONICET/IDEAN, UBA.</li>
+                <li>Lucía Clarisa Contardo. IGN/UNSAM.</li>
+                <li>Adrián Silva Busso. IAA/UTN/FRCON, UTN.</li>
+                <li>Rogelio Daniel Acevedo. CADIC-CONICET/ICPA, UNTDF.</li>
+              </ul>
+            </article>
+
+            <article class="collaborator-area data-source">
+              <h5>Oceanografía</h5>
+              <ul>
+                <li>Gabriela Tosonotto. IAA.</li>
+                <li>Eduardo Ruiz Barlett. IAA.</li>
+                <li>Marta Sierra. IAA.</li>
+              </ul>
+            </article>
+
+            <article class="collaborator-area data-source">
+              <h5>Glaciología, hidrología, permafrost</h5>
+              <ul>
+                <li>Sebastián Marinsek. IAA.</li>
+                <li>Juan Manuel Lirio. IAA/UNSAM.</li>
+                <li>Arturo Huber. IAA.</li>
+                <li>Carla Puigdo. IAA.</li>
+                <li>Liliana Margorani. IAA/CONICET.</li>
+                <li>José Seco. IGN/ IANIGLIA, CONICET.</li>
+                <li>Adrián Silva Busso. IAA.</li>
+              </ul>
+            </article>
+
+          </div>
+
+          <!-- Siglas y abreviaturas -->
+          <section class="section-collaborators disclaimer">
+            <p class="">La pertenencia institucional es la que cada colaborador tenía al momento de realizar su contribución al atlas.</p>
+            <h4>Siglas y abreviaturas</h4>
+            <ul class="acronyms-list">
+              <li class="acronym-card">
+                <div class="acronym">CADIC, CONICET</div>
+                <div class="meaning">Centro Austral de Investigaciones Científicas, Consejo Nacional de Investigaciones Científicas y Técnicas.</div>
+              </li>
+              <li class="acronym-card">
+                <div class="acronym">COCOANTAR</div>
+                <div class="meaning">Comando Conjunto Antártico.</div>
+              </li>
+              <li class="acronym-card">
+                <div class="acronym">CONICET</div>
+                <div class="meaning">Consejo Nacional de Investigaciones Científicas y Técnicas.</div>
+              </li>
+              <li class="acronym-card">
+                <div class="acronym">FRCON, UTN</div>
+                <div class="meaning">Facultad Regional de Concordia, Universidad Tecnológica Nacional.</div>
+              </li>
+              <li class="acronym-card">
+                <div class="acronym">IAA</div>
+                <div class="meaning">Instituto Antártico Argentino.</div>
+              </li>
+              <li class="acronym-card">
+                <div class="acronym">IANIGLIA, CONICET</div>
+                <div class="meaning">Instituto Argentino de Nivología, Glaciología y Ciencias Ambientales, Consejo Nacional de Investigaciones Científicas y Técnicas.</div>
+              </li>
+              <li class="acronym-card">
+                <div class="acronym">ICPA, UNTREF</div>
+                <div class="meaning">Instituto de Ciencias Polares, Ambiente y Recursos Naturales, Universidad Nacional de Tres de Febrero.</div>
+              </li>
+              <li class="acronym-card">
+                <div class="acronym">IDEAN, UBA</div>
+                <div class="meaning">Instituto de Estudios Andino, Universidad de Buenos Aires.</div>
+              </li>
+              <li class="acronym-card">
+                <div class="acronym">IGN</div>
+                <div class="meaning">Instituto Geográfico Nacional.</div>
+              </li>
+              <li class="acronym-card">
+                <div class="acronym">SGM, IGN</div>
+                <div class="meaning">Servicio Geográfico Militar, Instituto Geográfico Nacional.</div>
+              </li>
+              <li class="acronym-card">
+                <div class="acronym">UNSAM</div>
+                <div class="meaning">Universidad Nacional de San Martín.</div>
+              </li>
+              <li class="acronym-card">
+                <div class="acronym">UTN</div>
+                <div class="meaning">Universidad Tecnológica Nacional.</div>
+            </ul>
+          </section>
+
+        </div>
+    </section>
+  </main>
+  <footer id="footer"></footer>
+
+  <script>
+    fetch('/components/footer.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('footer').innerHTML = data;
+      });
+  </script>
+  <script src="/js/main.js"></script>
+</body>
+
+</html>

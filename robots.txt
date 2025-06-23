@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /components/
+
+Allow: /assets/
+Allow: /js/
+Allow: /styles/
+
+Sitemap: https://antartida-anida.ign.gob.ar/static/atlas-antartida-web/sitemap.xml
