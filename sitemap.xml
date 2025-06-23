@@ -1,47 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Página principal -->
   <url>
-    <loc>https://www.anida.ign.gob.ar//</loc>
+    <loc>https://antartida-anida.ign.gob.ar/static/atlas-antartida-web/index.html</loc>
+    <lastmod>2025-06-23</lastmod>
     <priority>1.0</priority>
   </url>
+  <!-- Secciones principales -->
   <url>
-    <loc>https://www.anida.ign.gob.ar/acercade.html</loc>
+    <loc>https://antartida-anida.ign.gob.ar/static/atlas-antartida-web/acercade.html</loc>
+    <lastmod>2025-06-23</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.anida.ign.gob.ar/contacto.html</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.anida.ign.gob.ar/equipo.html</loc>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.anida.ign.gob.ar/arg_ambiental.html</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.anida.ign.gob.ar/arg_econ.html</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.anida.ign.gob.ar/arg_fisico_natural.html</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.anida.ign.gob.ar/arg_mundo.html</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.anida.ign.gob.ar/arg_socio_demo.html</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.anida.ign.gob.ar/otros_recursos.html</loc>
+    <loc>https://antartida-anida.ign.gob.ar/static/atlas-antartida-web/contacto.html</loc>
+    <lastmod>2025-06-23</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.anida.ign.gob.ar/tutoriales.html</loc>
+    <loc>https://antartida-anida.ign.gob.ar/static/atlas-antartida-web/equipo.html</loc>
+    <lastmod>2025-06-23</lastmod>
     <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://antartida-anida.ign.gob.ar/static/atlas-antartida-web/estructura-general.html</loc>
+    <lastmod>2025-06-23</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://antartida-anida.ign.gob.ar/static/atlas-antartida-web/cita.html</loc>
+    <lastmod>2025-06-23</lastmod>
+    <priority>0.5</priority>
   </url>
 </urlset>
