@@ -39,9 +39,9 @@
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
 
   <!-- Estilos personalizados -->
-  <link rel="stylesheet" href="/styles/normalize.css">
-  <link rel="stylesheet" href="/styles/main.css">
-  <link rel="stylesheet" href="/styles/navbar.css">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/navbar.css">
 
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
@@ -56,7 +56,7 @@
   <header id="header" role="navigation"></header>
 
   <script>
-    fetch('/components/navbar.html')
+    fetch('components/navbar.html')
       .then(response => response.text())
       .then(data => {
         document.getElementById('header').innerHTML = data;
@@ -68,7 +68,7 @@
       <div class="container position-relative" data-aos="fade-up" data-aos-delay="500">
         <picture>
           <source media="(max-width: 500px)" srcset="assets/icons/web_titulo_atlasantartida_2lineas_negro.svg">
-          <img src="/assets/images/web_titulo_atlasantartida_1linea_blanco.png" alt="ANIDA">
+          <img src="assets/images/web_titulo_atlasantartida_1linea_blanco.png" alt="ANIDA">
         </picture>
         <h1 style="font-family: Gotham-Light; display: none;">ATLAS DE LA ANTÁRTIDA ARGENTINA</h1>
         <br>
@@ -84,7 +84,7 @@
             <a href="https://antartida-anida.ign.gob.ar/mapstore/#/geostory/398" id="historia-antartica-argentina" target="_blank" data-tracking-category="navigation" data-tracking-action="click" data-tracking-label="Historia antártica argentina" title="Historia antártica argentina">
               <div class="icon-box no-bg">
                 <div class="icon">
-                  <img src="/assets/icons/antartida_02_historia.svg" alt="Historia antártica argentina">
+                  <img src="assets/icons/antartida_02_historia.svg" alt="Historia antártica argentina">
                 </div>
                 <h5>Historia antártica argentina</h5>
               </div>
@@ -95,7 +95,7 @@
             <a href="https://antartida-anida.ign.gob.ar/mapstore/#/geostory/4872" id="bases-antarticas" target="_blank" data-tracking-category="navigation" data-tracking-action="click" data-tracking-label="Bases antárticas, transporte y logística" title="Bases antárticas, transporte y logística">
               <div class="icon-box no-bg">
                 <div class="icon">
-                  <img src="/assets/icons/antartida_03_bases.svg" alt="Bases antárticas, transporte y logística">
+                  <img src="assets/icons/antartida_03_bases.svg" alt="Bases antárticas, transporte y logística">
                 </div>
                 <h5>Bases antárticas, transporte y logística</h5>
               </div>
@@ -106,7 +106,7 @@
             <a href="https://antartida-anida.ign.gob.ar/mapstore/#/geostory/194" id="geomorfologia" target="_blank" data-tracking-category="navigation" data-tracking-action="click" data-tracking-label="Geomorfología" title="Geomorfología">
               <div class="icon-box no-bg">
                 <div class="icon">
-                  <img src="/assets/icons/antartida_07_geomorfo.svg" alt="Geomorfología">
+                  <img src="assets/icons/antartida_07_geomorfo.svg" alt="Geomorfología">
                 </div>
                 <h5>Geomorfología</h5>
               </div>
@@ -117,7 +117,7 @@
             <a id="oceanografia" target="_blank" href="https://antartida-anida.ign.gob.ar/mapstore/#/geostory/410">
               <div class="icon-box no-bg">
                 <div class="icon">
-                  <img src="/assets/icons/antartida_10_oceano.svg" alt="Oceanografía">
+                  <img src="assets/icons/antartida_10_oceano.svg" alt="Oceanografía">
                 </div>
                 <h5>Oceanografía</h5>
               </div>
@@ -128,7 +128,7 @@
             <a id="glaciologia" href="javascript:void(0);" class="disabled">
               <div class="icon-box no-bg">
                 <div class="icon">
-                  <img src="/assets/icons/antartida_09_glacio.svg" alt="Glaciología">
+                  <img src="assets/icons/antartida_09_glacio.svg" alt="Glaciología">
                 </div>
                 <h5>Glaciología</h5>
               </div>
@@ -142,13 +142,13 @@
   <footer id="footer" role="contentinfo"></footer>
 
   <script>
-    fetch('/components/footer.html')
+    fetch('components/footer.html')
       .then(response => response.text())
       .then(data => {
         document.getElementById('footer').innerHTML = data;
       });
   </script>
-  <script src="/js/main.js"></script>
+  <script src="js/main.js"></script>
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
